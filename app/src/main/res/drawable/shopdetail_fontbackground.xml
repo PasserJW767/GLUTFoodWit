@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:useLevel="false">
+
+    <corners
+        android:bottomLeftRadius="2dp"
+        android:bottomRightRadius="2dp"
+        android:topLeftRadius="2dp"
+        android:topRightRadius="2dp" />
+
+    <!-- 设置填充颜色 -->
+    <solid android:color="@color/white" />
+    <!-- 设置边框颜色 -->
+    <stroke android:width="1dp" android:color="@color/shopDetail_fontColorRed"/>
+
+</shape>

@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 状态栏过渡 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/MainBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_back"
+            android:background="@color/MainBackground"/>
+
+
+
+        <!-- 标题：我的收藏 -->
+        <TextView
+            android:layout_width="380dp"
+            android:layout_height="match_parent"
+            android:background="@color/MainBackground"
+            android:text="我的收藏"
+            android:paddingLeft="-30dp"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/register_topColor"
+            android:shadowColor="@color/register_title_shadow"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/allOrders_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notfound"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="空空如也..."
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+
+</LinearLayout>

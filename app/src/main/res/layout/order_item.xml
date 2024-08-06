@@ -1,0 +1,260 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/recommend_allBackground">
+
+    <LinearLayout
+        android:layout_width="383dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recommend_iconsbackground"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center|left">
+
+            <TextView
+                android:id="@+id/order_shopId"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/order_Id"
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/shopName"
+                android:layout_margin="10dp"
+                android:layout_width="280dp"
+                android:layout_height="match_parent"
+                android:text="老牌蒋记烧烤城 >"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/orderState"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="6dp"
+                android:gravity="right"
+                android:text="已完成"
+                android:textSize="16sp"/>
+
+        </LinearLayout>
+
+        <!-- 分割线 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/MainBackground"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+            <LinearLayout
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView1"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shopdetail_head" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:text="金针菇" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shopdetail_head" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:text="金针菇" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView3"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shopdetail_head" />
+
+                        <TextView
+                            android:id="@+id/textView3"
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:text="金针菇" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shopdetail_head" />
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:text="金针菇" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/imageView5"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/shopdetail_head" />
+
+                        <TextView
+                            android:id="@+id/textView5"
+                            android:layout_width="60dp"
+                            android:layout_height="20dp"
+                            android:text="金针菇" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="下单时间："
+                android:gravity="center"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/orderCreateTime"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="2021-06-05 22:26"
+                android:gravity="center|left"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="合计:"
+                android:gravity="center|left"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/orderPrice"
+                android:layout_marginTop="5dp"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:text="￥137.81"
+                android:gravity="center|left"
+                android:textSize="18sp"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:gravity="right|center">
+
+            <TextView
+                android:id="@+id/tv_btnState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="再来一单"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:background="@drawable/btn_selector"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

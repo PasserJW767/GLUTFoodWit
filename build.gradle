@@ -1,0 +1,58 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven {
+            url "https://mvn.mob.com/android"
+        }
+
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.2.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:2.0'
+        classpath "com.mob.sdk:MobSDK:2018.0319.1724"
+
+        classpath 'com.google.protobuf:protobuf-gradle-plugin:0.8.8'
+
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.0.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+    allprojects {
+        gradle.projectsEvaluated {
+            tasks.withType(JavaCompile) {
+                options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+            }
+        }
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+ext {
+    // Sdk and tools
+    minSdkVersion = 16
+    targetSdkVersion = 22
+    compileSdkVersion = 28
+    buildToolsVersion = '27.0.2'
+    supportLibraryVersion = '27.0.2'
+
+    glideVersion = '3.7.0'
+    frescoVersion = '0.14.1'
+    picassoVersion = '2.5.2'
+}
+

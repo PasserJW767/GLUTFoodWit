@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/my_platebackground"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.gutfoodwit.activity.WaitForLoginForgetActivity1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:layout_height="50dp"
+            android:background="@color/mainColor"
+            android:text="辅助资料验证"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60dp"
+                android:text="身份证号："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_idnumber"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edit_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="请输入新密码："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_newpwd"
+                android:layout_width="210dp"
+                android:inputType="numberPassword"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/edit_selector"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:text="请再输入密码："
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/et_againpwd"
+                android:layout_width="210dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:inputType="numberPassword"
+                android:background="@drawable/edit_selector"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.example.gutfoodwit.activity.SwipeCaptchaView
+        android:layout_marginTop="210dp"
+        android:id="@+id/swipeCaptchaView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/guilin"
+        app:captchaHeight="30dp"
+        app:captchaWidth="30dp"/>
+
+    <SeekBar
+        android:id="@+id/dragBar"
+        android:layout_width="320dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/swipeCaptchaView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:progressDrawable="@drawable/dragbg"
+        android:thumb="@drawable/thumb_bg"/>
+
+    <Button
+        android:id="@+id/bt_ensure"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="46dp"
+        android:background="@drawable/wait_for_login_forget_bkg"
+        android:textSize="18sp"
+        android:text="确      定" />
+</RelativeLayout>

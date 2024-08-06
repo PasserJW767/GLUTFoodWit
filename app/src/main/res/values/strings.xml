@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">GLUT食趣</string>
+    <string name="waitToLogin_title" translatable="false">GLUT食趣</string>
+    <string name="waitToLogin_login" translatable="false">登录</string>
+    <string name="waitToLogin_Register" translatable="false">注册</string>
+    <string name="register_title" translatable="false">用户注册</string>
+    <string name="register_userName" translatable="false">请输入用户名</string>
+    <string name="register_userPwd" translatable="false">请输入密码</string>
+    <string name="register_userPwdAgain" translatable="false">请再输入一次密码</string>
+    <string name="register_userTel" translatable="false">请输入联系方式</string>
+    <string name="register_vertification" translatable="false">输入收到的验证码</string>
+    <string name="register_getCode" translatable="false">获取验证码</string>
+    <string name="me_userName" translatable="false">用户名：</string>
+    <string name="me_userNameDetail" translatable="false">JustAPasser</string>
+    <string name="me_personInfo" translatable="false">个人信息</string>
+    <string name="me_aboutUs" translatable="false">关于我们</string>
+    <string name="me_voucher" translatable="false">红包卡券</string>
+    <string name="me_order" translatable="false">我的订单</string>
+    <string name="me_lottery" translatable="false">每日抽奖</string>
+    <string name="lottery_moneyF" translatable="false">￥10代金券</string>
+    <string name="lottery_moneyS" translatable="false">￥30代金券</string>
+    <string name="myInfo_headImg" translatable="false">我的头像</string>
+    <string name="myInfo_userName" translatable="false">用户名</string>
+    <string name="myInfo_userGender" translatable="false">性别</string>
+    <string name="myInfo_userTel" translatable="false">手机号</string>
+    <string name="voucher_title" translatable="false">红包卡券</string>
+    <string name="myOrder_title" translatable="false">我的订单</string>
+</resources>

@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="@color/thegrey"
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+
+        <LinearLayout
+            android:id="@+id/ll_order1"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/white_background"
+            android:layout_marginLeft="16dp"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="按评分"
+                android:textSize="14sp"/>
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/xiangxia"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_order2"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/white_background"
+            android:layout_marginLeft="60dp"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="按销量"
+                android:textSize="14sp"/>
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/xiangxia"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_order3"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/white_background"
+            android:layout_marginLeft="60dp"
+            android:layout_width="80dp"
+            android:layout_height="24dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="按人均"
+                android:textSize="14sp"/>
+            <ImageView
+                android:layout_marginTop="5dp"
+                android:layout_width="10dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/xiangxia"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

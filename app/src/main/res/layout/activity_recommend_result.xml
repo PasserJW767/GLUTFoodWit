@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_all"
+    android:background="@color/recommend_allBackground">
+
+    <!-- 状态栏过渡 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/MainBackground"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/MainBackground" >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="25dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/img_back"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColorHighlight="@color/white"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:text="食趣" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/allOrders_notice"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notfound"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="还没有这类商品呢..."
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:id="@+id/ll_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/recommend_allBackground">
+
+        <LinearLayout
+            android:background="@color/recommend_allBackground"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+            <LinearLayout
+                android:id="@+id/ll_order1"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/recommend_iconsbackground"
+                android:layout_marginLeft="16dp"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="按评分"
+                    android:textSize="14sp"/>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/xiangxia"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_order2"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/recommend_iconsbackground"
+                android:layout_marginLeft="60dp"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="按销量"
+                    android:textSize="14sp"/>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/xiangxia"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_order3"
+                android:layout_marginTop="3dp"
+                android:background="@drawable/recommend_iconsbackground"
+                android:layout_marginLeft="60dp"
+                android:layout_width="80dp"
+                android:layout_height="24dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="match_parent"
+                    android:text="按人均"
+                    android:textSize="14sp"/>
+                <ImageView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="10dp"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/xiangxia"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/lv_searchlistview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </ListView>
+    </LinearLayout>
+</LinearLayout>

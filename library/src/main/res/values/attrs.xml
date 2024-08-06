@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LoopViewPager">
+        <attr name="loop_ms" format="integer" />
+        <attr name="loop_duration" format="integer" />
+        <attr name="loop_style" format="enum">
+            <enum name="empty" value="-1"/>
+            <enum name="depth" value="1"/>
+            <enum name="zoom" value="2"/>
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SwipeCaptchaView">
+        <attr name="captchaWidth" format="dimension"/>
+        <attr name="captchaHeight" format="dimension"/>
+        <attr name="matchDeviation" format="dimension"/>
+    </declare-styleable>
+</resources>

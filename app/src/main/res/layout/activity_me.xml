@@ -1,0 +1,966 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_backgroundColor"
+    android:orientation="vertical">
+
+    <!-- 状态栏过渡 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/MainBackground"/>
+
+    <!-- 顶部颜色 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="198dp"
+        android:background="@color/MainBackground" />
+
+    <!-- 用户信息 -->
+    <LinearLayout
+        android:layout_width="356dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-180dp"
+        android:orientation="horizontal">
+
+        <!-- 头像 -->
+        <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:padding="10dp"
+            android:background="@drawable/head_background">
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/my_headpicture"
+                android:background="@drawable/head_background"/>
+
+        </RelativeLayout>
+
+        <!-- 用户名具体内容 -->
+        <TextView
+            android:id="@+id/tv_userName"
+            android:layout_width="150dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center|left"
+            android:text="@string/me_userNameDetail"
+            android:textColor="@color/my_fontColor"
+            android:textSize="26dp" />
+
+
+        <!-- 设置按钮 -->
+        <ImageView
+            android:id="@+id/my_myInfo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/shezhi" />
+
+        <!-- 图标 -->
+        <ImageView
+            android:id="@+id/my_aboutUs"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="25dp"
+            android:src="@drawable/my_about"/>
+
+    </LinearLayout>
+
+
+    <!-- 头像底部：购物车、收藏夹、足迹、红包卡券 -->
+
+    <GridLayout
+        android:layout_width="390dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="20dp"
+        android:columnCount="4"
+        android:rowCount="1">
+
+        <!-- 购物车 -->
+        <LinearLayout
+            android:id="@+id/shopCart"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:id="@+id/iv_shopcar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_shopcart" />
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="购物车"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+
+        <!-- 收藏夹 -->
+        <LinearLayout
+            android:id="@+id/btn_collect"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_collect" />
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="收藏夹"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+
+        <!-- 足迹 -->
+        <LinearLayout
+            android:id="@+id/my_track"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_footprint" />
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="足迹"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+
+        <!-- 红包卡券 -->
+        <LinearLayout
+            android:id="@+id/my_voucher"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="55dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_voucher" />
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="红包卡券"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+
+
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="380dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/my_platebackground"
+        android:rowCount="1"
+        android:columnCount="5">
+
+        <!-- 我的订单 -->
+        <LinearLayout
+            android:id="@+id/my_order"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_order"/>
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="我的订单"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+
+        <!-- 待付款 -->
+        <LinearLayout
+            android:id="@+id/waitToPay"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_waittopay"/>
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="待付款"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+
+        <!-- 待使用 -->
+        <LinearLayout
+            android:id="@+id/waitToUse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_waittouse"/>
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="待使用"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+
+        <!-- 待评价 -->
+        <LinearLayout
+            android:id="@+id/waitToEvaluate"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_waittoevaluate"/>
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="待评分"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+
+        <!-- 待退款 -->
+        <LinearLayout
+            android:id="@+id/my_refundOrAfterSale"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"
+            android:orientation="vertical">
+
+            <!-- 图片 -->
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/my_waittorefund"/>
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="退款/售后"
+                android:textColor="@color/my_fontColor" />
+
+        </LinearLayout>
+    </GridLayout>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="1"
+        android:columnCount="1"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/my_lottery"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_my_order"
+            android:orientation="horizontal">
+
+            <!-- 图标 -->
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/my_lottery" />
+
+            <!-- 文字 -->
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:text="@string/me_lottery"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:layout_marginLeft="70dp"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:src="@drawable/choujiang"/>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="325dp"
+        android:fillViewport="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:rowCount="4"
+            android:columnCount="2">
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:background="@drawable/my_platebackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/my_goodwelfare" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="优选福利"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/my_goodwelfaredetail"/>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="2">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_goodwelfare_invitefriend"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="邀请好友"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_goodwelfare_group"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="拼团"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="25dp"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:background="@drawable/my_platebackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/my_studentenjoy" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="学生专享"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/my_studentenjoydetail"/>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="2">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_studentenjoy_getwelfare"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="领福利"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_studentenjoy_touse"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="去使用"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:background="@drawable/my_platebackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/my_contribute" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="热心公益"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/my_contributedetail"/>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="2">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_contribute_donate"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="去捐赠"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_contribute_donatemy"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的捐赠"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:background="@drawable/my_platebackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/my_canteen"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="美食大牌会员"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/my_canteendetail"/>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="2">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_canteen_card"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="去领卡"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_canteen_vip"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的会员"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:background="@drawable/my_platebackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/my_wallet" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="钱包特惠"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/my_walletdetail"/>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="2">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_wallet_discount"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="银行特惠"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_wallet_present"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="申卡送礼"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:background="@drawable/my_platebackground"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/my_school" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="我的大学"
+                        android:textSize="15dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="130dp"
+                    android:layout_marginTop="3dp"
+                    android:src="@drawable/my_schooldetail"/>
+
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:rowCount="1"
+                    android:columnCount="2">
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_school_choose"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="去选课"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="50dp"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_marginLeft="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:src="@drawable/my_school_study"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的学习"
+                            android:gravity="center"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+        </GridLayout>
+
+    </ScrollView>
+
+
+    <!-- 过渡 -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+    <!-- 底部导航栏分割线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/navigation_border"/>
+
+    <!-- 导航栏按钮组 -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_navigation_home"
+            android:drawableTop="@drawable/navigation_home_selector"
+            android:text="首页"
+            android:button="@null"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_height="55dp"
+            android:layout_width="137dp"/>
+
+        <RadioButton
+            android:id="@+id/btn_navigation_recommend"
+            android:drawableTop="@drawable/navigation_recommend_normal"
+            android:text="推荐"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_height="55dp"
+            android:layout_width="137dp"/>
+
+        <RadioButton
+            android:id="@+id/btn_navigation_me"
+            android:drawableTop="@drawable/navigation_me_normal"
+            android:text="我的"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_height="55dp"
+            android:layout_width="137dp"/>
+
+
+
+    </RadioGroup>
+
+</LinearLayout>

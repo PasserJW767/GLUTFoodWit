@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/view">
+
+    <!-- 状态栏过渡 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/MainBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_back"
+            android:background="@color/MainBackground"/>
+
+        <!-- 标题：每日抽奖 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/MainBackground"
+            android:text="@string/me_lottery"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:paddingLeft="-30dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/register_topColor"
+            android:shadowColor="@color/register_title_shadow"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:layout_marginBottom="60dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/showNotice"
+        android:layout_width="0dp"
+        android:layout_height="0dp"/>
+
+    <com.example.gutfoodwit.activity.LuckyView
+        android:visibility="invisible"
+        android:id="@+id/lucky_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"/>
+
+
+
+
+
+</LinearLayout>

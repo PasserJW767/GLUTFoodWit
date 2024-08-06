@@ -1,0 +1,1295 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/recommend_allBackground"
+    android:orientation="vertical">
+
+    <!-- 状态栏过渡 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/MainBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/MainBackground"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="GLUT食趣"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="25sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="发现更多校园美食"
+            android:gravity="center|left"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:background="@drawable/recommend_topbackground"
+            android:orientation="vertical">
+
+            <!-- 打招呼 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:id="@+id/tv_welcomeInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"/>
+
+            </LinearLayout>
+
+            <!-- 猜你想要 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="猜你想吃："
+                    android:gravity="center"
+                    android:textSize="18sp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_height="match_parent"
+                        android:text="汉堡"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/recommend_fontbackground"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_height="match_parent"
+                        android:text="麻辣烫"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/recommend_fontbackground"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_height="match_parent"
+                        android:text="奶茶"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/recommend_fontbackground"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_height="match_parent"
+                        android:text="炸鸡"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/recommend_fontbackground"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_height="match_parent"
+                        android:text="寿司"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/recommend_fontbackground"
+                        android:layout_marginRight="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:layout_height="match_parent"
+                        android:text="豆浆"
+                        android:textColor="@color/black"
+                        android:textSize="13sp"
+                        android:gravity="center"
+                        android:background="@drawable/recommend_fontbackground"
+                        android:layout_marginRight="5dp"/>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/recommend_iconsbackground"
+                android:orientation="vertical">
+                <!-- 图标大类 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <!-- 美食 -->
+                    <LinearLayout
+                        android:id="@+id/deliciousFood"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="58dp"
+                            android:layout_height="58dp"
+                            android:background="@drawable/recommend_iconbackgroundf">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/recommend_deliciousfood"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="美食"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <!-- 甜点饮品 -->
+                    <LinearLayout
+                        android:id="@+id/desertDrink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="58dp"
+                            android:layout_height="58dp"
+                            android:background="@drawable/recommend_iconbackgrounds">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="50dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/recommend_dessert"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="甜点饮品"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <!-- 超市便利 -->
+                    <LinearLayout
+                        android:id="@+id/superMarket"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="58dp"
+                            android:layout_height="58dp"
+                            android:background="@drawable/recommend_iconbackgroundt">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/recommend_market"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="超市便利"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <!-- 蔬菜水果 -->
+                    <LinearLayout
+                        android:id="@+id/fruitVegetable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="58dp"
+                            android:layout_height="58dp"
+                            android:background="@drawable/recommend_iconbackgroundfo">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/recommend_fruit"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="蔬菜水果"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+
+                    <!-- 买药 -->
+                    <LinearLayout
+                        android:id="@+id/medicine"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="58dp"
+                            android:layout_height="58dp"
+                            android:background="@drawable/recommend_iconbackgroundfi">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center"
+                                android:src="@drawable/recomend_medicine"/>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="买药"
+                            android:textColor="@color/black"
+                            android:gravity="center"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- 图标小类 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="25dp">
+
+                    <!-- 汉堡披萨 -->
+                    <LinearLayout
+                        android:id="@+id/hamburgerPizza"
+                        android:layout_width="40dp"
+                        android:layout_height="55dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/recommend_hamburger"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="汉堡"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <!-- 家常菜 -->
+                    <LinearLayout
+                        android:id="@+id/homeVegetable"
+                        android:layout_width="40dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="35dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/recommend_homefood"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="家常菜"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <!-- 小吃馆 -->
+                    <LinearLayout
+                        android:id="@+id/snacks"
+                        android:layout_width="40dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="35dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/recommend_barbeque"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="小吃馆"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <!-- 果捞果切 -->
+                    <LinearLayout
+                        android:id="@+id/fruits"
+                        android:layout_width="40dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="35dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/recommend_fruitdishes"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="果捞"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+
+                    <!-- 快餐便当 -->
+                    <LinearLayout
+                        android:id="@+id/fastFood"
+                        android:layout_width="40dp"
+                        android:layout_height="55dp"
+                        android:layout_marginLeft="35dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/recommend_fastfood"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="快餐"
+                            android:textColor="@color/black"
+                            android:textSize="10sp"/>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 广告，给钱就放 -->
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="96dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/recommend_advertisingbackground">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/recommend_advertising"/>
+
+            </LinearLayout>
+
+
+            <!-- 根据当前时间推荐的店铺 -->
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="300dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/recommend_iconsbackground"
+                android:orientation="vertical">
+
+                <!-- xx好店 -->
+                <TextView
+                    android:id="@+id/tv_goodShopTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="下午茶好店"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:columnCount="2"
+                    android:rowCount="2">
+
+                    <LinearLayout
+                        android:id="@+id/recommend_shopF"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_recommendF"
+                            android:layout_width="177.5dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/shopdetail_backgrounddetail"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/tv_shopIdrecommendF"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_shopNamerecommendF"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="老牌蒋记烧烤城"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/recommend_shopS"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_recommendS"
+                            android:layout_width="177.5dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/shopdetail_backgrounddetail"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/tv_shopIdrecommendS"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_shopNamerecommendS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="老牌蒋记烧烤城"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/recommend_shopT"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_recommendT"
+                            android:layout_width="177.5dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/shopdetail_backgrounddetail"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/tv_shopIdrecommendT"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_shopNamerecommendT"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="老牌蒋记烧烤城"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/recommend_shopFo"
+                        android:visibility="invisible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/img_recommendFo"
+                            android:layout_width="177.5dp"
+                            android:layout_height="100dp"
+                            android:src="@drawable/shopdetail_backgrounddetail"
+                            android:scaleType="centerCrop"/>
+
+                        <TextView
+                            android:id="@+id/tv_shopIdrecommendFo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/tv_shopNamerecommendFo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="老牌蒋记烧烤城"
+                            android:textColor="@color/black"
+                            android:gravity="center"
+                            android:textSize="15sp"/>
+
+                    </LinearLayout>
+                </GridLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:paddingBottom="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/recommend_iconsbackground"
+                android:orientation="vertical">
+
+                <!-- 我买过的 -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我爱吃的"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20sp"/>
+
+                <LinearLayout
+                    android:id="@+id/allOrders_notice"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/notfound"
+                        android:gravity="center"/>
+
+                    <TextView
+                        android:layout_marginTop="30dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="您还未下过单，小食还不知道您爱吃什么呢..."
+                        android:textSize="16sp"/>
+
+                </LinearLayout>
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp"
+                    android:rowCount="5"
+                    android:columnCount="1">
+
+                    <LinearLayout
+                        android:id="@+id/linear_plate1"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/recommend_myfavoritebackground"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/recommend_advertisingbackground">
+
+                                <ImageView
+                                    android:id="@+id/img_lovingF"
+                                    android:layout_width="130dp"
+                                    android:layout_height="70dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/shopdetail_backgrounddetail"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="180dp"
+                                android:layout_height="70dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_name_lovingF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="蒋记出品香辣烤螺"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tv_sale_lovingF"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="月售 3564"
+                                    android:layout_marginTop="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_price_lovingF"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="价格 ￥15"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/shopDetail_fontColorRed"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_shopIcon_lovingF"
+                                android:layout_width="30dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/shopdetail_head"/>
+
+                            <TextView
+                                android:id="@+id/tv_shopId_lovingF"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"/>
+
+                            <TextView
+                                android:id="@+id/tv_shopName_lovingF"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:text="老牌蒋记烧烤城"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"/>
+
+                            <ImageView
+                                android:layout_marginLeft="70dp"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|right"
+                                android:src="@drawable/xing"/>
+
+                            <TextView
+                                android:id="@+id/tv_shopStar_lovingF"
+                                android:layout_width="23dp"
+                                android:layout_height="wrap_content"
+                                android:text="4.8"
+                                android:textColor="@color/btn_pressColor"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_plate2"
+                        android:background="@drawable/recommend_myfavoritebackground"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/recommend_advertisingbackground">
+
+                                <ImageView
+                                    android:id="@+id/img_lovingS"
+                                    android:layout_width="130dp"
+                                    android:layout_height="70dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/shopdetail_backgrounddetail"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="180dp"
+                                android:layout_height="70dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_name_lovingS"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="蒋记出品香辣烤螺"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tv_sale_lovingS"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="月售 3564"
+                                    android:layout_marginTop="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_price_lovingS"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="价格 ￥15"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/shopDetail_fontColorRed"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_shopIcon_lovingS"
+                                android:layout_width="30dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/shopdetail_head"/>
+                            <TextView
+                                android:id="@+id/tv_shopId_lovingS"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"/>
+                            <TextView
+                                android:id="@+id/tv_shopName_lovingS"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:text="老牌蒋记烧烤城"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"/>
+
+                            <ImageView
+                                android:layout_marginLeft="70dp"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|right"
+                                android:src="@drawable/xing"/>
+
+                            <TextView
+                                android:id="@+id/tv_shopStar_lovingS"
+                                android:layout_width="23dp"
+                                android:layout_height="wrap_content"
+                                android:text="4.8"
+                                android:textColor="@color/btn_pressColor"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_plate3"
+                        android:background="@drawable/recommend_myfavoritebackground"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/recommend_advertisingbackground">
+
+                                <ImageView
+                                    android:id="@+id/img_lovingT"
+                                    android:layout_width="130dp"
+                                    android:layout_height="70dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/shopdetail_backgrounddetail"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="180dp"
+                                android:layout_height="70dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_name_lovingT"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="蒋记出品香辣烤螺"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tv_sale_lovingT"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="月售 3564"
+                                    android:layout_marginTop="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_price_lovingT"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="价格 ￥15"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/shopDetail_fontColorRed"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_shopIcon_lovingT"
+                                android:layout_width="30dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/shopdetail_head"/>
+                            <TextView
+                                android:id="@+id/tv_shopId_lovingT"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"/>
+                            <TextView
+                                android:id="@+id/tv_shopName_lovingT"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:text="老牌蒋记烧烤城"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"/>
+
+                            <ImageView
+                                android:layout_marginLeft="70dp"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|right"
+                                android:src="@drawable/xing"/>
+
+                            <TextView
+                                android:id="@+id/tv_shopStar_lovingT"
+                                android:layout_width="23dp"
+                                android:layout_height="wrap_content"
+                                android:text="4.8"
+                                android:textColor="@color/btn_pressColor"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_plate4"
+                        android:background="@drawable/recommend_myfavoritebackground"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/recommend_advertisingbackground">
+
+                                <ImageView
+                                    android:id="@+id/img_lovingFo"
+                                    android:layout_width="130dp"
+                                    android:layout_height="70dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/shopdetail_backgrounddetail"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="180dp"
+                                android:layout_height="70dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_name_lovingFo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="蒋记出品香辣烤螺"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tv_sale_lovingFo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="月售 3564"
+                                    android:layout_marginTop="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_price_lovingFo"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="价格 ￥15"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/shopDetail_fontColorRed"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_shopIcon_lovingFo"
+                                android:layout_width="30dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/shopdetail_head"/>
+                            <TextView
+                                android:id="@+id/tv_shopId_lovingFo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"/>
+                            <TextView
+                                android:id="@+id/tv_shopName_lovingFo"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:text="老牌蒋记烧烤城"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"/>
+
+                            <ImageView
+                                android:layout_marginLeft="70dp"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|right"
+                                android:src="@drawable/xing"/>
+
+                            <TextView
+                                android:id="@+id/tv_shopStar_lovingFo"
+                                android:layout_width="23dp"
+                                android:layout_height="wrap_content"
+                                android:text="4.8"
+                                android:textColor="@color/btn_pressColor"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_plate5"
+                        android:background="@drawable/recommend_myfavoritebackground"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="130dp"
+                                android:layout_height="70dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@drawable/recommend_advertisingbackground">
+
+                                <ImageView
+                                    android:id="@+id/img_lovingFi"
+                                    android:layout_width="130dp"
+                                    android:layout_height="70dp"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/shopdetail_backgrounddetail"/>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="5dp"
+                                android:layout_marginLeft="30dp"
+                                android:layout_width="180dp"
+                                android:layout_height="70dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/tv_name_lovingFi"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="蒋记出品香辣烤螺"
+                                    android:layout_marginTop="5dp"
+                                    android:textSize="15sp"
+                                    android:textColor="@color/black"/>
+
+                                <TextView
+                                    android:id="@+id/tv_sale_lovingFi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="月售 3564"
+                                    android:layout_marginTop="5dp"/>
+
+                                <TextView
+                                    android:id="@+id/tv_price_lovingFi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="价格 ￥15"
+                                    android:layout_marginTop="5dp"
+                                    android:textColor="@color/shopDetail_fontColorRed"/>
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/img_shopIcon_lovingFi"
+                                android:layout_width="30dp"
+                                android:layout_marginLeft="25dp"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/shopdetail_head"/>
+                            <TextView
+                                android:id="@+id/tv_shopId_lovingFi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"/>
+                            <TextView
+                                android:id="@+id/tv_shopName_lovingFi"
+                                android:layout_marginLeft="10dp"
+                                android:layout_width="180dp"
+                                android:layout_height="match_parent"
+                                android:text="老牌蒋记烧烤城"
+                                android:gravity="center|left"
+                                android:textColor="@color/black"
+                                android:textSize="15sp"/>
+
+                            <ImageView
+                                android:layout_marginLeft="70dp"
+                                android:layout_width="20dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center|right"
+                                android:src="@drawable/xing"/>
+
+                            <TextView
+                                android:id="@+id/tv_shopStar_lovingFi"
+                                android:layout_width="23dp"
+                                android:layout_height="wrap_content"
+                                android:text="4.8"
+                                android:textColor="@color/btn_pressColor"
+                                android:textSize="15sp"/>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+
+
+                </GridLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- 底部导航栏分割线 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/navigation_border"/>
+
+    <!-- 导航栏按钮组 -->
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/btn_navigation_home"
+            android:drawableTop="@drawable/navigation_home_selector"
+            android:text="首页"
+            android:button="@null"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_height="55dp"
+            android:layout_width="137dp"/>
+
+        <RadioButton
+            android:id="@+id/btn_navigation_recommend"
+            android:drawableTop="@drawable/navigation_recommend_normal"
+            android:text="推荐"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_height="55dp"
+            android:layout_width="137dp"/>
+
+        <RadioButton
+            android:id="@+id/btn_navigation_me"
+            android:drawableTop="@drawable/navigation_me_normal"
+            android:text="我的"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:button="@null"
+            android:layout_height="55dp"
+            android:layout_width="137dp"/>
+
+
+
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- 状态栏过渡 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/MainBackground"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_back"
+            android:background="@color/MainBackground"/>
+
+        <!-- 标题：关于我们 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/MainBackground"
+            android:text="@string/me_aboutUs"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:paddingLeft="-30dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/register_topColor"
+            android:shadowColor="@color/register_title_shadow"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="3"
+            android:layout_marginBottom="60dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="诚挚感谢您使用这款手机App！"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开发者是桂林理工大学信息科学与工程学院2018级软件工程专业的两位学生。"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="此项目是学习Android开发之初尝试建立的，必有许多不足之处，欢迎广大专家、老师、使用者批评指正。"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="我们的联系方式如下："
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tel：14795572282/18706979150"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="QQ：709263897/2795200642"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="E-mail：709263897@qq.com"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="联系地址：广西壮族自治区桂林市雁山区雁山镇318号桂林理工大学"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="期待收到您宝贵的意见或建议！"
+        android:textSize="20sp"
+        android:layout_marginBottom="5dp"/>
+
+
+
+
+
+</LinearLayout>
