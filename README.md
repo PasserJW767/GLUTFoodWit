@@ -97,23 +97,22 @@
   }
   ```
 
-```
 - 注册监听回调
-
-```java
-EventHandler eh=new EventHandler(){
-@Override
-    public void afterEvent(int event, int result, Object data) {
-        // TODO 此处不可直接处理UI线程，处理后续操作需传到主线程中操作
-        Message msg = new Message();
-        msg.arg1 = event;
-        msg.arg2 = result;
-        msg.obj = data;
-        mHandler.sendMessage(msg);
-
-    }
-};
-```
+  
+  ```java
+  EventHandler eh=new EventHandler(){
+  @Override
+      public void afterEvent(int event, int result, Object data) {
+          // TODO 此处不可直接处理UI线程，处理后续操作需传到主线程中操作
+          Message msg = new Message();
+          msg.arg1 = event;
+          msg.arg2 = result;
+          msg.obj = data;
+          mHandler.sendMessage(msg);
+  
+      }
+  };
+  ```
 
 - 请求验证码
   
